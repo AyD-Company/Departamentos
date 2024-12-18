@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Avance para el mai</title>
+    
   </head>
   <body>
-
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
@@ -45,26 +45,25 @@
               <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li class="active"><a href="index.html"><span>Home</span></a></li>
                 <li class="has-children">
-                  <a href="about.html"><span>Dropdown</span></a>
+                  <a href="about.html"><span>Departamentos</span></a>
                   <ul class="dropdown arrow-top">
-                    <li><a href="#">Menu uno</a></li>
-                    <li><a href="#">Menu dos</a></li>
-                    <li><a href="#">Menu tres</a></li>
-                    <li class="has-children">
-                      <a href="#">Dropdown</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Menu uno</a></li>
-                        <li><a href="#">Menu dos</a></li>
-                        <li><a href="#">Menu tres</a></li>
-                        <li><a href="#">Menu cuatro</a></li>
-                      </ul>
-                    </li>
+                    <li><a href="#">Arteaga</a></li>
+                    <li><a href="#">La Noria</a></li>
                   </ul>
                 </li>
-                <li><a href="listings.html"><span>Listings</span></a></li>
                 <li><a href="about.html"><span>About</span></a></li>
-                <li><a href="blog.html"><span>Blog</span></a></li>
-                <li><a href="contact.html"><span>Contacto</span></a></li>
+                <li>
+                    <a href="https://facebook.com" target="_blank">
+                      <img src="images/facebook.png" alt="Facebook" width="24" height="24">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com" target="_blank">
+                      <img src="images/instagram.png" alt="Instagram" width="24" height="24">
+                    </a>
+                  </li>
+                  
+                  
               </ul>
             </nav>
           </div>
@@ -79,14 +78,71 @@
       
     </header>
 
-    <div class="hero" style="background-image: url('images/hero_1.jpg');"></div>
+    <div class="hero-carousel">
+        <!-- Primera imagen con redirección -->
+        <div class="carousel-slide active">
+          <a href="carrusel1.html">
+            <img src="images/hero_1.jpg" alt="Primera imagen" class="carousel-image">
+          </a>
+        </div>
+      
+        <!-- Segunda imagen con redirección -->
+        <div class="carousel-slide">
+          <a href="carrusel2.html">
+            <img src="images/hero_2.jpg" alt="Segunda imagen" class="carousel-image">
+          </a>
+        </div>
+      
+        <div class="carousel-controls">
+          <span class="prev">&#10094;</span>
+          <span class="next">&#10095;</span>
+        </div>
+      </div>
+    
+  <div class="browser">
+    <div class="chrome">
+      <a href="#" class="red"></a>
+      <a href="#" class="amber"></a>
+      <a href="#" class="green"></a>
+      <div class="url"></div>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.carousel__thumbnails label').forEach(label => {
+      label.addEventListener('click', function (event) {
+        event.preventDefault(); // Previene el comportamiento predeterminado del clic
+        const radioId = this.getAttribute('for'); // Obtiene el ID del input radio
+        document.getElementById(radioId).checked = true; // Activa el radio manualmente
+      });
+    });
+  </script>
+  <script>
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    let currentIndex = 0;
   
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+  
+    prev.addEventListener('click', () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+      showSlide(currentIndex);
+    });
+  
+    next.addEventListener('click', () => {
+      currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+      showSlide(currentIndex);
+    });
+  
+    // Mostrar la primera imagen al inicio
+    showSlide(currentIndex);
+  </script>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
 
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
