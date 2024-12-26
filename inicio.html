@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcosdePaz</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!--Fuentes de letras-->
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        @font-face {
+            font-family: "The Season";
+            src: url("path-to-your-font/TheSeason.ttf") format("truetype");
+        }
+
+        header {
+            background: linear-gradient(to bottom, #adf8e2, #ffffff);
+        }
+
+        .img-container img {
+            position: relative;
+            top: 20px;
+            left: -15px;
+        }
+
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 100%;
+        }
+
+        .icon-container .nav-link {
+            font-size: 1.2rem;
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .icon-container .nav-link:hover {
+            color: #006d64;
+        }
+
+        #AcercaDe,
+        #Idioma {
+            font-family: "The Season", sans-serif;
+            font-size: 16px;
+            padding-bottom: 5px;
+        }
+
+        #img-inicio {
+            width: 80%;
+            height: 800px;
+            margin-top: 10px;
+            margin-left: 132px;
+        }
+
+        /* Espaciado entre cards */
+        #carros {
+            gap: 30px;
+            /* Espaciado horizontal entre columnas */
+        }
+
+        /* Sombra 3D para las tarjetas */
+        .card {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            /* Sombra en dirección diagonal */
+            border: none;
+            /* Elimina bordes para un diseño más limpio */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Transiciones suaves */
+        }
+
+        /* Efecto hover para resaltar la tarjeta */
+        .card:hover {
+            transform: translateY(-6px);
+            /* Mueve la tarjeta ligeramente hacia arriba */
+            box-shadow: 8px 8px 20px rgba(2, 161, 235, 0.705);
+            /* Intensifica la sombra al pasar el mouse */
+        }
+
+        /* Fuente y tamaño para los textos de las cards */
+        .card-text {
+            font-family: 'Yeseva One', cursive;
+            font-size: 30px;
+        }
+    
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container" style="height: 200px;">
+            <div class="row h-100">
+                <!-- Imagen alineada a la izquierda -->
+                <div class="col-4 img-container d-flex align-content-start">
+                    <img src="/Logo.png" style="height: 180px; padding-top: 20px;">
+                </div>
+                <!-- Iconos alineados a la derecha -->
+                <div class="col-8 icon-container">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="margin-right: 30px;" id="AcercaDe">Acerca de
+                                        </a>
+                                    </li>
+                                    <li class="nav-item" style="margin-right: 30px;">
+                                        <a class="nav-link active" href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" style="margin-right: 30px;">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 60px;"
+                                            id="Idioma">
+                                            Language
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Es</a></li>
+                                            <li><a class="dropdown-item" href="#">En</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--FIN DEL HEADER-->
+
+    <img src="/Fachada.jpg" id="img-inicio">
+
+    <div class="container text-center" style="margin: 100px;">
+        <div class="row" id="carros">
+            <!--Card 1-->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <!--Carrusel-->
+                        <div id="Carrusel-LaNoria" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/Imagenes/LaNoria/sala.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Imagenes/LaNoria/comedor.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Imagenes/LaNoria/cuarto2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <!--fin de carrusel-->
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" id="txtCard1">La Noria</p>
+                    </div>
+                </div>
+            </div>
+            <!--Card 2-->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <!--Carrusel-->
+                        <div id="Carrusel-Arteaga" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/Imagenes/Arteaga/Sala.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Imagenes/Arteaga/Cuarto.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Imagenes/Arteaga/Cuarto2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <!--fin de carrusel-->
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" id="txtCard2">Arteaga</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
