@@ -100,13 +100,135 @@
                 margin-top: 10px;
             }
         }
+        .carousel__slides img {
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 576px) {
+    .carousel__slides figcaption {
+        font-size: 14px; /* Ajustar tamaño de fuente */
+        text-align: center; /* Mejor alineación */
+    }
+    .carousel__thumbnails img {
+        width: 50px; /* Reducir tamaño de miniaturas */
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    #img-inicio {
+        margin-top: 20px;
+    }
+    .card-text {
+        font-size: 18px;
+    }
+    .icon-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .icon-container .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+figcaption {
+    color: #000; /* Cambiar el color del texto */
+    padding: 10px;
+    border-radius: 0; /* Eliminar esquinas redondeadas */
+}
+.icon-container .nav-link {
+    font-size: 1.2rem; /* Ajustar tamaño en dispositivos móviles */
+    color: black;
+    margin: 5px; /* Reducir el margen en pantallas pequeñas */
+}
+.icon-container .nav-link:hover {
+    color: #006d64;
+}
+
+@media (max-width: 768px) {
+    .icon-container {
+        flex-direction: row;
+        justify-content: space-around; /* Espaciado uniforme */
+        align-items: center;
+        padding: 10px 0; /* Agregar un pequeño relleno */
+    }
+    .icon-container .nav-link {
+        font-size: 1rem; /* Ajustar tamaño en pantallas pequeñas */
+        margin: 0 10px; /* Espaciado entre íconos */
+    }
+}
+.carousel__slides figure {
+    display: flex;
+    flex-direction: column; /* Apilar elementos verticalmente */
+    align-items: center; /* Centrar el contenido */
+}
+.carousel__slides img {
+    width: 100%; /* Asegurar que la imagen ocupe todo el ancho */
+    height: auto;
+}
+figcaption {
+    margin-top: 10px; /* Espacio entre imagen y texto */
+    font-size: 1rem; /* Ajustar tamaño del texto */
+    text-align: center; /* Centrar texto debajo de la imagen */
+    color: #000; /* Asegurar color legible */
+}
+/* Diseño general (pantallas grandes) */
+.carousel__slides figure {
+    display: flex;
+    flex-direction: row; /* Imagen y texto en línea por defecto */
+    align-items: center; /* Centrar verticalmente imagen y texto */
+    justify-content: flex-start; /* Texto a la derecha de la imagen */
+}
+
+.carousel__slides img {
+    width: 60%; /* Imagen ocupa el 60% del contenedor */
+    height: auto; /* Mantener proporción */
+}
+
+figcaption {
+    margin-left: 20px; /* Espaciado entre imagen y texto */
+    font-size: 1rem; /* Tamaño de texto estándar */
+    text-align: left; /* Alineación a la izquierda */
+    white-space: normal; /* Permitir saltos de línea por defecto */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .carousel__slides figure {
+        flex-direction: column; /* Apilar imagen y texto */
+        align-items: center; /* Centrar contenido horizontalmente */
+    }
+
+    .carousel__slides img {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 800px; /* Limita el tamaño máximo del ancho a 800px */
+    max-height: 450px; /* Limita el tamaño máximo de la altura a 450px */
+    object-fit: cover; /* Asegura que la imagen se recorte de forma adecuada si es necesario */
+}
+
+
+    figcaption {
+        margin-left: 0; /* Quitar margen lateral */
+        margin-top: 10px; /* Espacio entre imagen y texto */
+        text-align: center; /* Centrar texto */
+        white-space: normal; /* Permitir saltos de línea si es necesario */
+        overflow: visible; /* Mostrar contenido completo */
+        font-size: 1rem; /* Tamaño de texto adaptable */
+        width: auto; /* Ajustar al contenido */
+        height: auto; /* Ajustar al contenido */
+        padding: 10px; /* Espaciado interno para mejor legibilidad */
+        box-sizing: border-box; /* Incluir padding en el cálculo de ancho */
+    }
+}
 </style>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-6 col-md-4">
                     <img src="/Logo.png" class="img-fluid" alt="Logo">
                 </div>
@@ -153,13 +275,11 @@
                 <ul class="carousel__slides">
                     <li class="carousel__slide">
                         <figure>
-                            <div>
                                 <img src="/Imagenes/Arteaga/fachada_arteaga.jpg" alt="">
-                            </div>
                             <figcaption>
                                 Arteaga 410 Centro #1  
-                                $1250 por noche  Capacidad: 2 personas  
-                                Contacto: 951 159 7471  
+                                <br>$1250 por noche  <br>Capacidad: 2 personas  
+                                <br>Contacto: 951 159 7471  
 
                                 <span class="credit">ECOS DE PAZ</span>
                             </figcaption>
@@ -167,9 +287,7 @@
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                            <div>
                                 <img src="/Imagenes/Arteaga/carrusel/cuarto.jpg" alt="">
-                            </div>
                             <figcaption>
                                 Recámara con cama 
                                 <br> King Size
@@ -181,9 +299,7 @@
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                            <div>
                                 <img src="/Imagenes/arteaga/carrusel/cuarto2.jpg" alt="">
-                            </div>
                             <figcaption>
                                 Habitación con dos <br>camas individuales 
                                 <br>Armario de madera <br>ofrece amplio espacio <br>de 
@@ -194,9 +310,7 @@
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                            <div>
                                 <img src="/Imagenes/arteaga/carrusel/Sala.jpg" alt="">
-                            </div>
                             <figcaption>
                                 Sala moderna con sofá y decoración minimalista.
                                 <br>Comedor para 4 <br>personas.    
@@ -206,9 +320,7 @@
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                            <div>
                                 <img src="/Imagenes/arteaga/carrusel/lavado.jpg" alt="">
-                            </div>
                             <figcaption>
                                 Patio de servicio <br>práctico.  
                                 <br>Espacio para <br>lavar y tender ropa.  
@@ -218,9 +330,7 @@
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                            <div>
                                 <img src="/Imagenes/arteaga/carrusel/baño.jpg" alt="">
-                            </div>
                             <figcaption>
                                 Baño completo con agua caliente
                                 <span class="credit">ECOS DE PAZ</span>                            

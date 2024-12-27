@@ -456,13 +456,6 @@ a {
                   object-fit: cover;
               }
               
-              figcaption {
-                  align-self: flex-end;
-                  padding: 20px 20px 0 20px;
-                  flex: 0 0 auto;
-                  width: 25%;
-                  min-width: 150px;
-              }
               
               .credit {
                   margin-top: 1rem;
