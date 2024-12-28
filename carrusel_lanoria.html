@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-   <!-- Required meta tags -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
-   <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <!-- Bootstrap Icons -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
 
-   <!-- Fuentes -->
-   <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
 
-   <!-- Style -->
-   <link rel="stylesheet" href="css/style.css">
-   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-   <title>Carrusel Arteaga</title>
-<style>
-    @font-face {
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--pal wasa-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--messenger-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!--boton retunr-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+    <title>Carrusel Arteaga</title>
+    <style>
+        @font-face {
             font-family: "The Season";
             src: url("path-to-your-font/TheSeason.ttf") format("truetype");
         }
@@ -92,138 +100,280 @@
             }
 
             .card-text {
-                font-size: 18px; /* Ajustar texto en pantallas pequeñas */
+                font-size: 18px;
+                /* Ajustar texto en pantallas pequeñas */
             }
 
             .icon-container {
-                justify-content: center; /* Centrar íconos en pantallas pequeñas */
+                justify-content: center;
+                /* Centrar íconos en pantallas pequeñas */
                 margin-top: 10px;
             }
         }
+
         .carousel__slides img {
-    width: 100%;
-    height: auto;
-}
-@media (max-width: 576px) {
-    .carousel__slides figcaption {
-        font-size: 14px; /* Ajustar tamaño de fuente */
-        text-align: center; /* Mejor alineación */
-    }
-    .carousel__thumbnails img {
-        width: 50px; /* Reducir tamaño de miniaturas */
-        height: auto;
-    }
-}
-@media (max-width: 768px) {
-    #img-inicio {
-        margin-top: 20px;
-    }
-    .card-text {
-        font-size: 18px;
-    }
-    .icon-container {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 10px;
-    }
-    .icon-container .nav-link {
-        font-size: 0.9rem;
-    }
-}
+            width: 100%;
+            height: auto;
+        }
 
-figcaption {
-    color: #000; /* Cambiar el color del texto */
-    padding: 10px;
-    border-radius: 0; /* Eliminar esquinas redondeadas */
-}
-.icon-container .nav-link {
-    font-size: 1.2rem; /* Ajustar tamaño en dispositivos móviles */
-    color: black;
-    margin: 5px; /* Reducir el margen en pantallas pequeñas */
-}
-.icon-container .nav-link:hover {
-    color: #006d64;
-}
+        @media (max-width: 576px) {
+            .carousel__slides figcaption {
+                font-size: 14px;
+                /* Ajustar tamaño de fuente */
+                text-align: center;
+                /* Mejor alineación */
+            }
 
-@media (max-width: 768px) {
-    .icon-container {
-        flex-direction: row;
-        justify-content: space-around; /* Espaciado uniforme */
-        align-items: center;
-        padding: 10px 0; /* Agregar un pequeño relleno */
-    }
-    .icon-container .nav-link {
-        font-size: 1rem; /* Ajustar tamaño en pantallas pequeñas */
-        margin: 0 10px; /* Espaciado entre íconos */
-    }
-}
-.carousel__slides figure {
-    display: flex;
-    flex-direction: column; /* Apilar elementos verticalmente */
-    align-items: center; /* Centrar el contenido */
-}
-.carousel__slides img {
-    width: 100%; /* Asegurar que la imagen ocupe todo el ancho */
-    height: auto;
-}
-figcaption {
-    margin-top: 10px; /* Espacio entre imagen y texto */
-    font-size: 1rem; /* Ajustar tamaño del texto */
-    text-align: center; /* Centrar texto debajo de la imagen */
-    color: #000; /* Asegurar color legible */
-}
-/* Diseño general (pantallas grandes) */
-.carousel__slides figure {
-    display: flex;
-    flex-direction: row; /* Imagen y texto en línea por defecto */
-    align-items: center; /* Centrar verticalmente imagen y texto */
-    justify-content: flex-start; /* Texto a la derecha de la imagen */
-}
+            .carousel__thumbnails img {
+                width: 50px;
+                /* Reducir tamaño de miniaturas */
+                height: auto;
+            }
+        }
 
-.carousel__slides img {
-    width: 80%; /* Imagen ocupa el 60% del contenedor */
-    height: auto; /* Mantener proporción */
-}
+        @media (max-width: 768px) {
+            #img-inicio {
+                margin-top: 20px;
+            }
 
-figcaption {
-    margin-left: 20px; /* Espaciado entre imagen y texto */
-    font-size: 1rem; /* Tamaño de texto estándar */
-    text-align: left; /* Alineación a la izquierda */
-    white-space: normal; /* Permitir saltos de línea por defecto */
-}
+            .card-text {
+                font-size: 18px;
+            }
 
-/* Ajustes para dispositivos móviles */
-@media (max-width: 768px) {
-    .carousel__slides figure {
-        flex-direction: column; /* Apilar imagen y texto */
-        align-items: center; /* Centrar contenido horizontalmente */
-    }
+            .icon-container {
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 10px;
+            }
 
-    .carousel__slides img {
-    width: 100%; /* La imagen ocupa todo el ancho disponible */
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-width: 800px; /* Limita el tamaño máximo del ancho a 800px */
-    max-height: 450px; /* Limita el tamaño máximo de la altura a 450px */
-    object-fit: cover; /* Asegura que la imagen se recorte de forma adecuada si es necesario */
-}
+            .icon-container .nav-link {
+                font-size: 0.9rem;
+            }
+        }
+
+        figcaption {
+            color: #000;
+            /* Cambiar el color del texto */
+            padding: 10px;
+            border-radius: 0;
+            /* Eliminar esquinas redondeadas */
+        }
+
+        .icon-container .nav-link {
+            font-size: 1.2rem;
+            /* Ajustar tamaño en dispositivos móviles */
+            color: black;
+            margin: 5px;
+            /* Reducir el margen en pantallas pequeñas */
+        }
+
+        .icon-container .nav-link:hover {
+            color: #006d64;
+        }
+
+        @media (max-width: 768px) {
+            .icon-container {
+                flex-direction: row;
+                justify-content: space-around;
+                /* Espaciado uniforme */
+                align-items: center;
+                padding: 10px 0;
+                /* Agregar un pequeño relleno */
+            }
+
+            .icon-container .nav-link {
+                font-size: 1rem;
+                /* Ajustar tamaño en pantallas pequeñas */
+                margin: 0 10px;
+                /* Espaciado entre íconos */
+            }
+        }
+
+        .carousel__slides figure {
+            display: flex;
+            flex-direction: column;
+            /* Apilar elementos verticalmente */
+            align-items: center;
+            /* Centrar el contenido */
+        }
+
+        .carousel__slides img {
+            width: 100%;
+            /* Asegurar que la imagen ocupe todo el ancho */
+            height: auto;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            /* Espacio entre imagen y texto */
+            font-size: 1rem;
+            /* Ajustar tamaño del texto */
+            text-align: center;
+            /* Centrar texto debajo de la imagen */
+            color: #000;
+            /* Asegurar color legible */
+        }
+
+        /* Diseño general (pantallas grandes) */
+        .carousel__slides figure {
+            display: flex;
+            flex-direction: row;
+            /* Imagen y texto en línea por defecto */
+            align-items: center;
+            /* Centrar verticalmente imagen y texto */
+            justify-content: flex-start;
+            /* Texto a la derecha de la imagen */
+        }
+
+        .carousel__slides img {
+            width: 80%;
+            /* Imagen ocupa el 60% del contenedor */
+            height: auto;
+            /* Mantener proporción */
+        }
+
+        figcaption {
+            margin-left: 20px;
+            /* Espaciado entre imagen y texto */
+            font-size: 1rem;
+            /* Tamaño de texto estándar */
+            text-align: left;
+            /* Alineación a la izquierda */
+            white-space: normal;
+            /* Permitir saltos de línea por defecto */
+        }
+
+        /* Ajustes para dispositivos móviles */
+        @media (max-width: 768px) {
+            .carousel__slides figure {
+                flex-direction: column;
+                /* Apilar imagen y texto */
+                align-items: center;
+                /* Centrar contenido horizontalmente */
+            }
+
+            .carousel__slides img {
+                width: 100%;
+                /* La imagen ocupa todo el ancho disponible */
+                height: auto;
+                /* Mantiene la proporción de la imagen */
+                max-width: 800px;
+                /* Limita el tamaño máximo del ancho a 800px */
+                max-height: 450px;
+                /* Limita el tamaño máximo de la altura a 450px */
+                object-fit: cover;
+                /* Asegura que la imagen se recorte de forma adecuada si es necesario */
+            }
 
 
-    figcaption {
-        margin-left: 0; /* Quitar margen lateral */
-        margin-top: 10px; /* Espacio entre imagen y texto */
-        text-align: center; /* Centrar texto */
-        white-space: normal; /* Permitir saltos de línea si es necesario */
-        overflow: visible; /* Mostrar contenido completo */
-        font-size: 1rem; /* Tamaño de texto adaptable */
-        width: auto; /* Ajustar al contenido */
-        height: auto; /* Ajustar al contenido */
-        padding: 10px; /* Espaciado interno para mejor legibilidad */
-        box-sizing: border-box; /* Incluir padding en el cálculo de ancho */
-    }
-}
-</style>
+            figcaption {
+                margin-left: 0;
+                /* Quitar margen lateral */
+                margin-top: 10px;
+                /* Espacio entre imagen y texto */
+                text-align: center;
+                /* Centrar texto */
+                white-space: normal;
+                /* Permitir saltos de línea si es necesario */
+                overflow: visible;
+                /* Mostrar contenido completo */
+                font-size: 1rem;
+                /* Tamaño de texto adaptable */
+                width: auto;
+                /* Ajustar al contenido */
+                height: auto;
+                /* Ajustar al contenido */
+                padding: 10px;
+                /* Espaciado interno para mejor legibilidad */
+                box-sizing: border-box;
+                /* Incluir padding en el cálculo de ancho */
+            }
+        }
+        /* Whatsapp floating button */
+        .float-whatsapp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 101;
+        }
+
+        .float-whatsapp:hover {
+            text-decoration: none;
+            color: #25d366;
+            background-color: #fff;
+        }
+
+        .my-float-whatsapp {
+            margin-top: 16px;
+        }
+
+        /*messenger*/
+        .float-messenger {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 100px;
+            /* Ajustar según la posición deseada */
+            right: 40px;
+            background-color: #0084FF;
+            /* Color azul de Messenger */
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .float-messenger:hover {
+            text-decoration: none;
+            color: #0084FF;
+            background-color: #FFF;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+        /*Boton return*/
+        .float-home {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            /* Altura desde la parte inferior */
+            left: 40px;
+            /* Posición desde la parte izquierda */
+            background-color: #ff9800;
+            /* Color del botón */
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 102;
+        }
+
+        .float-home:hover {
+            text-decoration: none;
+            color: #ff9800;
+            background-color: #FFF;
+        }
+
+        .my-float-home {
+            margin-top: 16px;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -244,10 +394,11 @@ figcaption {
                                         <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="https://www.facebook.com/share/15gGtz3HuG/" target="_blank">
+                                        <a class="nav-link" href="https://www.facebook.com/share/15gGtz3HuG/"
+                                            target="_blank">
                                             <i class="bi bi-facebook"></i>
                                         </a>
-                                    </li> 
+                                    </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
                                             data-bs-toggle="dropdown" aria-expanded="false" id="Idioma">Language</a>
@@ -277,12 +428,12 @@ figcaption {
                 <ul class="carousel__slides">
                     <li class="carousel__slide">
                         <figure>
-                                <img src="/Imagenes/LaNoria/carrusel/fachada.jpg" alt="">
+                            <img src="/Imagenes/LaNoria/carrusel/fachada.jpg" alt="">
                             <figcaption>
                                 3RA PRIVADA DE LA NORIA 106 CENTRO
                                 $1350 X NOCHE
                                 <br>2° NIVEL(PISO)
-                                
+
                                 <br>Contacto: <br>951 159 7471
                                 <span class="credit">ECOS DE PAZ</span>
                             </figcaption>
@@ -290,58 +441,59 @@ figcaption {
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                                <img src="/Imagenes/LaNoria/carrusel/cuarto.jpg" alt="">
+                            <img src="/Imagenes/LaNoria/carrusel/cuarto.jpg" alt="">
                             <figcaption>
-                                Recámara con cama 
+                                Recámara con cama
                                 <br> King Size
-                                <br>Espacios confortables y 
-                                <br>bien iluminados.  
-                                <span class="credit">ECOS DE PAZ</span>                            
+                                <br>Espacios confortables y
+                                <br>bien iluminados.
+                                <span class="credit">ECOS DE PAZ</span>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                                <img src="/Imagenes/LaNoria/carrusel/cuarto2.jpg" alt="">
+                            <img src="/Imagenes/LaNoria/carrusel/cuarto2.jpg" alt="">
                             <figcaption>
-                                Recámara con cama 
+                                Recámara con cama
                                 <br> King Size
-                                <br>Espacios confortables y 
-                                <br>bien iluminados.  
-                                <span class="credit">ECOS DE PAZ</span>                            
+                                <br>Espacios confortables y
+                                <br>bien iluminados.
+                                <span class="credit">ECOS DE PAZ</span>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                                <img src="/Imagenes/LaNoria/carrusel/sala.jpg" alt="">
+                            <img src="/Imagenes/LaNoria/carrusel/sala.jpg" alt="">
                             <figcaption>
                                 Sala moderna con sofá y decoración minimalista.
-                                <br>Comedor para 6 <br>personas.    
-                                <span class="credit">ECOS DE PAZ</span>                            
+                                <br>Comedor para 6 <br>personas.
+                                <span class="credit">ECOS DE PAZ</span>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                                <img src="/Imagenes/LaNoria/carrusel/comedor.jpg" alt="">
+                            <img src="/Imagenes/LaNoria/carrusel/comedor.jpg" alt="">
                             <figcaption>
-                                Cocina moderna y bien iluminada con isla central, estufa, refrigerador y amplias ventanas. 
+                                Cocina moderna y bien iluminada con isla central, estufa, refrigerador y amplias
+                                ventanas.
                                 Perfecta para cocinar y convivir.
-                                <span class="credit">ECOS DE PAZ</span>                            
+                                <span class="credit">ECOS DE PAZ</span>
                             </figcaption>
                         </figure>
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                                <img src="/Imagenes/LaNoria/carrusel/baño.jpg" alt="">
+                            <img src="/Imagenes/LaNoria/carrusel/baño.jpg" alt="">
                             <figcaption>
                                 Baño completo con agua caliente
-                                <span class="credit">ECOS DE PAZ</span>                            
+                                <span class="credit">ECOS DE PAZ</span>
                             </figcaption>
                         </figure>
                     </li>
-                </ul>    
+                </ul>
                 <ul class="carousel__thumbnails">
                     <li>
                         <label for="slide-1"><img src="/Imagenes/LaNoria/thumbnails/fachada.jpg" alt=""></label>
@@ -365,5 +517,19 @@ figcaption {
             </div>
         </div>
     </section>
+    <!-- Whatsapp floating button -->
+    <a href="https://api.whatsapp.com/send?phone=529511597471&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20."
+        class="float-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp my-float-whatsapp"></i>
+    </a>
+    <!--messenger-->
+    <a href="https://m.me/tuUsuarioDeMessenger" class="float-messenger" target="_blank">
+        <i class="fab fa-facebook-messenger my-float"></i>
+    </a>
+    <!-- Botón flotante para regresar al inicio -->
+    <a href="index.html" class="float-home" title="Regresar al inicio">
+        <i class="fa fa-home my-float-home"></i>
+    </a>
 </body>
+
 </html>
