@@ -17,6 +17,15 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!--pal wasa-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--messenger-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!--boton retunr-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
 
@@ -178,6 +187,89 @@
 
             }
 
+        }
+
+        /* Whatsapp floating button */
+        .float-whatsapp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 101;
+        }
+
+        .float-whatsapp:hover {
+            text-decoration: none;
+            color: #25d366;
+            background-color: #fff;
+        }
+
+        .my-float-whatsapp {
+            margin-top: 16px;
+        }
+
+        /*messenger*/
+        .float-messenger {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 100px;
+            /* Ajustar según la posición deseada */
+            right: 40px;
+            background-color: #0084FF;
+            /* Color azul de Messenger */
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .float-messenger:hover {
+            text-decoration: none;
+            color: #0084FF;
+            background-color: #FFF;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+
+        /*Boton return*/
+        .float-home {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            /* Altura desde la parte inferior */
+            left: 40px;
+            /* Posición desde la parte izquierda */
+            background-color: #ff9800;
+            /* Color del botón */
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 102;
+        }
+
+        .float-home:hover {
+            text-decoration: none;
+            color: #ff9800;
+            background-color: #FFF;
+        }
+
+        .my-float-home {
+            margin-top: 16px;
         }
     </style>
 </head>
@@ -362,6 +454,20 @@
         </div>
     </footer>
 
+    <!-- Whatsapp floating button -->
+    <a href="https://api.whatsapp.com/send?phone=529511597471&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20."
+        class="float-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp my-float-whatsapp"></i>
+    </a>
+    <!--messenger-->
+    <a href="https://m.me/tuUsuarioDeMessenger" class="float-messenger" target="_blank">
+        <i class="fab fa-facebook-messenger my-float"></i>
+    </a>
+
+    <!-- Botón flotante para regresar al inicio -->
+    <a href="index.html" class="float-home" title="Regresar al inicio">
+        <i class="fa fa-home my-float-home"></i>
+    </a>
 
 </body>
 

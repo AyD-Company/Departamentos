@@ -17,6 +17,7 @@
 
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
@@ -73,20 +74,21 @@
 
         /* Sombra 3D para las tarjetas */
         .card {
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 5px 5px 15px rgba(24, 80, 32, 0.658);
             border: none;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .card:hover {
             transform: translateY(-6px);
-            box-shadow: 8px 8px 20px rgba(2, 161, 235, 0.705);
+            box-shadow: 8px 8px 20px rgba(1, 85, 12, 0.705);
         }
 
         /* Fuente y tamaño para los textos de las cards */
         .card-text {
-            font-family: 'Yeseva One', cursive;
-            font-size: 20px;
+            font-family: 'Bebas Neue',sans-serif;
+            font-size: 30px;
+            color: black;
         }
 
         /* Media Queries para hacer responsivo */
@@ -236,34 +238,34 @@
             }
 
         }
+
         /*reseñas*/
         #reviews {
-    margin: 30px auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    max-width: 600px;
-}
+            margin: 30px auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            max-width: 600px;
+        }
 
-.review {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
+        .review {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
 
-.review h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
+        .review h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
 
-.review p {
-    margin-bottom: 5px;
-}
+        .review p {
+            margin-bottom: 5px;
+        }
 
-.review span {
-    color: #f9d71c;
-}
-
+        .review span {
+            color: #f9d71c;
+        }
     </style>
 
 
@@ -376,34 +378,45 @@
         </div>
     </div>
     <!--reseñas-->
-<!-- Testimonials Section -->
-<section id="reviews">
-    <div class="review">
-        <h3>Carlos</h3>
-        <p>"De las mejores anfitrionas que eh tenido; muy atenta y al pendiente de uno"</p>
-        <span>⭐⭐⭐⭐⭐</span>
-    </div>
-    <div class="review">
-        <h3>Sarah</h3>
-        <p>"Fue un departamento genial, más bonito que las fotos, muy espacioso y lleno de luz natural. La cocina estaba muy bien equipada para cocinar, y el apartamento está ubicado en una calle residencial muy tranquila a 15 minutos a pie del centro y a 10 minutos de un gran supermercado, por lo que se puede caminar por todas partes. Tuvimos una gran estadía."</p>
-        <span>⭐⭐⭐⭐⭐</span>
-    </div>
-    <div class="review">
-        <h3>Heriberto Carlos</h3>
-        <p>"excelente ubicación, suficientemente cerca del centro para llegar caminando pero lo bastante retirado para no estar en el bullicio"</p>
-        <span>⭐⭐⭐⭐⭐</span>
-    </div>
-    <div class="review">
-        <h3>Jorge Eduardo</h3>
-        <p>"Lugar muy tranquilo, amplio, muy bien ubicado, funcional, Habriela esta muy pendiente, nos se timps muy agusto, en un ambiente familiar."</p>
-        <span>⭐⭐⭐⭐⭐</span>
-    </div>
-    <div class="review">
-        <h3>Arnaud</h3>
-        <p>"Excelente estancia en Oaxaca! Muy bien ubicado y con siempre la ayuda de Gabriela en caso de necesidad! Recomiendo 100%"</p>
-        <span>⭐⭐⭐⭐⭐</span>
-    </div>
-</section>  
+    <h1 style="font-family: monospace; text-align: start; margin: 40px 0px 0px 90px;">Reseñas</h1>
+    <!-- Testimonials Section -->
+    <section id="reviews" style="display: flex; flex-wrap: wrap; gap: 20px; max-width: 90%;">
+        <div class="review" style="flex: 1 1 calc(50% - 20px);">
+            <h3>Carlos</h3>
+            <p style="font-size: 14px;font-family: serif; text-align: justify;">"De las mejores anfitrionas que eh
+                tenido; muy atenta y al pendiente de uno"</p>
+            <span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="review" style="flex: 1 1 calc(50% - 20px);">
+            <h3>Sarah</h3>
+            <p style="font-size: 14px;font-family: serif; text-align: justify;">"Fue un departamento genial, más bonito
+                que las fotos, muy espacioso y lleno de luz natural. La cocina estaba muy bien equipada para cocinar, y
+                el apartamento está ubicado en una calle residencial muy tranquila a 15 minutos a pie del centro y a 10
+                minutos de un gran supermercado, por lo que se puede caminar por todas partes. Tuvimos una gran
+                estadía."</p>
+            <span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="review" style="flex: 1 1 calc(50% - 20px);">
+            <h3>Heriberto Carlos</h3>
+            <p style="font-size: 14px;font-family: serif; text-align: justify;">"Excelente ubicación, suficientemente
+                cerca del centro para llegar caminando pero lo bastante retirado para no estar en el bullicio"</p>
+            <span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="review" style="flex: 1 1 calc(50% - 20px);">
+            <h3>Jorge Eduardo</h3>
+            <p style="font-size: 14px; font-family: serif; text-align: justify;">"Lugar muy tranquilo, amplio, muy bien
+                ubicado, funcional, Habriela está muy pendiente, nos sentimos muy agusto, en un ambiente familiar."</p>
+            <span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="review" style="flex: 1 1 calc(50% - 20px);">
+            <h3>Arnaud</h3>
+            <p style="font-size: 14px; font-family: serif; text-align: justify;">"Excelente estancia en Oaxaca! Muy bien
+                ubicado y con siempre la ayuda de Gabriela en caso de necesidad! Recomiendo 100%"</p>
+            <span>⭐⭐⭐⭐⭐</span>
+        </div>
+    </section>
+
+
     <!--Fin de contenedor-->
 
     <footer class="pie-pagina">
@@ -417,7 +430,10 @@
             </div>
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
-                
+                <p style="text-align: justify;">
+                    Descubre espacios amplios y tranquilos, con grandes balcones y ventanales que crean un ambiente
+                    lleno de paz. Perfectos para relajarte, inspirarte y disfrutar.</p>
+                <p><b>¡Encuentra el lugar ideal para tu próxima experiencia!</b></p>
             </div>
             <div class="box">
                 <h2>SIGUENOS</h2>
