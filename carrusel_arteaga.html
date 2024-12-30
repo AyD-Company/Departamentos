@@ -25,17 +25,9 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
-    <!--pal wasa-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!--messenger-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <!--boton retunr-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 
-
-    <title>Carrusel La Noria</title>
+    <title>Carrusel Arteaga</title>
     <style>
         @font-face {
             font-family: "The Season";
@@ -112,267 +104,80 @@
             }
         }
 
-        .carousel__slides img {
+        /*Estilo footer*/
+
+        .pie-pagina {
             width: 100%;
-            height: auto;
+            background: linear-gradient(#ffffff28, #006d64);
+            margin-top: 50px;
         }
 
-        @media (max-width: 576px) {
-            .carousel__slides figcaption {
-                font-size: 14px;
-                /* Ajustar tamaño de fuente */
-                text-align: center;
-                /* Mejor alineación */
-            }
-
-            .carousel__thumbnails img {
-                width: 50px;
-                /* Reducir tamaño de miniaturas */
-                height: auto;
-            }
-        }
-
-        @media (max-width: 768px) {
-            #img-inicio {
-                margin-top: 20px;
-            }
-
-            .card-text {
-                font-size: 18px;
-            }
-
-            .icon-container {
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                margin-top: 10px;
-            }
-
-            .icon-container .nav-link {
-                font-size: 0.9rem;
-            }
-        }
-
-        /* Whatsapp floating button */
-        .float-whatsapp {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 30px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 101;
-        }
-
-        .float-whatsapp:hover {
-            text-decoration: none;
-            color: #25d366;
-            background-color: #fff;
-        }
-
-        .my-float-whatsapp {
-            margin-top: 16px;
-        }
-
-        /*messenger*/
-        .float-messenger {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 100px;
-            /* Ajustar según la posición deseada */
-            right: 40px;
-            background-color: #0084FF;
-            /* Color azul de Messenger */
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-        }
-
-        .float-messenger:hover {
-            text-decoration: none;
-            color: #0084FF;
-            background-color: #FFF;
-        }
-
-        .my-float {
-            margin-top: 16px;
-        }
-
-        figcaption {
-            color: #000;
-            /* Cambiar el color del texto */
-            padding: 10px;
-            border-radius: 0;
-            /* Eliminar esquinas redondeadas */
-        }
-
-        .icon-container .nav-link {
-            font-size: 1.2rem;
-            /* Ajustar tamaño en dispositivos móviles */
-            color: black;
-            margin: 5px;
-            /* Reducir el margen en pantallas pequeñas */
-        }
-
-        .icon-container .nav-link:hover {
-            color: #006d64;
-        }
-
-        @media (max-width: 768px) {
-            .icon-container {
-                flex-direction: row;
-                justify-content: space-around;
-                /* Espaciado uniforme */
-                align-items: center;
-                padding: 10px 0;
-                /* Agregar un pequeño relleno */
-            }
-
-            .icon-container .nav-link {
-                font-size: 1rem;
-                /* Ajustar tamaño en pantallas pequeñas */
-                margin: 0 10px;
-                /* Espaciado entre íconos */
-            }
-        }
-
-        .carousel__slides figure {
-            display: flex;
-            flex-direction: column;
-            /* Apilar elementos verticalmente */
-            align-items: center;
-            /* Centrar el contenido */
-        }
-
-        .carousel__slides img {
+        .pie-pagina .grupo-1 {
             width: 100%;
-            /* Asegurar que la imagen ocupe todo el ancho */
-            height: auto;
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            padding: 45px 0px;
         }
 
-        figcaption {
-            margin-top: 10px;
-            /* Espacio entre imagen y texto */
-            font-size: 1rem;
-            /* Ajustar tamaño del texto */
-            text-align: center;
-            /* Centrar texto debajo de la imagen */
-            color: #000;
-            /* Asegurar color legible */
-        }
-
-        /* Diseño general (pantallas grandes) */
-        .carousel__slides figure {
+        .pie-pagina .grupo-1 .box figure {
+            width: 100%;
+            height: 100%;
             display: flex;
-            flex-direction: row;
-            /* Imagen y texto en línea por defecto */
+            justify-content: center;
             align-items: center;
-            /* Centrar verticalmente imagen y texto */
-            justify-content: flex-start;
-            /* Texto a la derecha de la imagen */
         }
 
-        .carousel__slides img {
-            width: 80%;
-            /* Imagen ocupa el 60% del contenedor */
-            height: auto;
-            /* Mantener proporción */
+        .pie-pagina .grupo-1 .box figure img {
+            width: 280px;
         }
 
-        figcaption {
-            margin-left: 20px;
-            /* Espaciado entre imagen y texto */
-            font-size: 1rem;
-            /* Tamaño de texto estándar */
-            text-align: left;
-            /* Alineación a la izquierda */
-            white-space: normal;
-            /* Permitir saltos de línea por defecto */
+        .pie-pagina .grupo-1 .box h2 {
+            color: rgb(0, 0, 0);
+            margin-bottom: 25px;
+            font-size: 20px;
         }
 
-        /* Ajustes para dispositivos móviles */
-        @media (max-width: 768px) {
-            .carousel__slides figure {
-                flex-direction: column;
-                /* Apilar imagen y texto */
-                align-items: center;
-                /* Centrar contenido horizontalmente */
-            }
+        .pie-pagina .grupo-1 .box p {
+            color: #252525;
+            margin-bottom: 10px;
 
-            .carousel__slides img {
-                width: 100%;
-                /* La imagen ocupa todo el ancho disponible */
-                height: auto;
-                /* Mantiene la proporción de la imagen */
-                max-width: 800px;
-                /* Limita el tamaño máximo del ancho a 800px */
-                max-height: 450px;
-                /* Limita el tamaño máximo de la altura a 450px */
-                object-fit: cover;
-                /* Asegura que la imagen se recorte de forma adecuada si es necesario */
-            }
-
-
-            figcaption {
-                margin-left: 0;
-                /* Quitar margen lateral */
-                margin-top: 10px;
-                /* Espacio entre imagen y texto */
-                text-align: center;
-                /* Centrar texto */
-                white-space: normal;
-                /* Permitir saltos de línea si es necesario */
-                overflow: visible;
-                /* Mostrar contenido completo */
-                font-size: 1rem;
-                /* Tamaño de texto adaptable */
-                width: auto;
-                /* Ajustar al contenido */
-                height: auto;
-                /* Ajustar al contenido */
-                padding: 10px;
-                /* Espaciado interno para mejor legibilidad */
-                box-sizing: border-box;
-                /* Incluir padding en el cálculo de ancho */
-            }
         }
 
-        /*Boton return*/
-        .float-home {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            /* Altura desde la parte inferior */
-            left: 40px;
-            /* Posición desde la parte izquierda */
-            background-color: #ff9800;
-            /* Color del botón */
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 102;
-        }
-
-        .float-home:hover {
+        .pie-pagina .grupo-1 .red-social a {
+            display: inline-block;
             text-decoration: none;
-            color: #ff9800;
-            background-color: #FFF;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: rgb(9, 72, 143);
+            margin-right: 10px;
+            background-color: rgba(255, 255, 255, 0);
+            text-align: center;
+            transition: all 300ms ease;
         }
 
-        .my-float-home {
-            margin-top: 16px;
+        .pie-pagina .grupo-1 .red-social a:hover {
+            color: #2d0068;
+        }
+
+        .pie-pagina .grupo-2 {
+            padding: 15px 10px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        @media screen and (max-width:800px) {
+            .pie-pagina .grupo-1 {
+                width: 90%;
+                grid-template-columns: repeat(1, 1fr);
+                grid: gap 30px;
+                padding: 35px 0px;
+
+            }
+
         }
     </style>
 </head>
@@ -381,7 +186,7 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-6 col-md-4">
                     <img src="/Logo.png" class="img-fluid" alt="Logo">
                 </div>
@@ -397,10 +202,7 @@
                                         <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="https://www.facebook.com/share/15gGtz3HuG/"
-                                            target="_blank">
-                                            <i class="bi bi-facebook"></i>
-                                        </a>
+                                        <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
@@ -419,7 +221,7 @@
         </div>
     </header>
     <!--FIN DEL HEADER-->
-    <section>
+    <section style="margin-top: 30px;">
         <div class="container">
             <div class="carousel">
                 <input type="radio" name="slides" checked="checked" id="slide-1">
@@ -431,65 +233,77 @@
                 <ul class="carousel__slides">
                     <li class="carousel__slide">
                         <figure>
-                            <img src="/Imagenes/Arteaga/fachada_arteaga.jpg" alt="">
+                            <div>
+                                <img src="/Imagenes/Arteaga/fachada_arteaga.jpg" alt="">
+                            </div>
                             <figcaption>
-                                Arteaga 410 Centro #1
-                                <br>$1250 por noche <br>Capacidad: 2 personas
-                                <br>Contacto: 951 159 7471
+                                <!--Arteaga 410 Centro #1  
+                                $1250 por noche  Capacidad: 2 personas  
+                                Contacto: 951 159 7471  
 
-                                <span class="credit">ECOS DE PAZ</span>
+                                <span class="credit">ECOS DE PAZ</span>-->
                             </figcaption>
                         </figure>
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                            <img src="/Imagenes/Arteaga/carrusel/cuarto.jpg" alt="">
+                            <div>
+                                <img src="/Imagenes/Arteaga/carrusel/cuarto.jpg" alt="">
+                            </div>
                             <figcaption>
-                                Recámara con cama
+                                <!-- Recámara con cama 
                                 <br> King Size
-                                <br>Espacios confortables y
-                                <br>bien iluminados.
-                                <span class="credit">ECOS DE PAZ</span>
+                                <br>Espacios confortables y 
+                                <br>bien iluminados.  
+                                <span class="credit">ECOS DE PAZ</span>     -->
                             </figcaption>
                         </figure>
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                            <img src="/Imagenes/arteaga/carrusel/cuarto2.jpg" alt="">
+                            <div>
+                                <img src="/Imagenes/arteaga/carrusel/cuarto2.jpg" alt="">
+                            </div>
                             <figcaption>
-                                Habitación con dos <br>camas individuales
-                                <br>Armario de madera <br>ofrece amplio espacio <br>de
+                                <!--Habitación con dos <br>camas individuales 
+                                <br>Armario de madera <br>ofrece amplio espacio <br>de 
                                 almacenamiento.
-                                <span class="credit">ECOS DE PAZ</span>
+                                <span class="credit">ECOS DE PAZ</span>  -->
                             </figcaption>
                         </figure>
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                            <img src="/Imagenes/arteaga/carrusel/Sala.jpg" alt="">
+                            <div>
+                                <img src="/Imagenes/arteaga/carrusel/Sala.jpg" alt="">
+                            </div>
                             <figcaption>
-                                Sala moderna con sofá y decoración minimalista.
-                                <br>Comedor para 4 <br>personas.
-                                <span class="credit">ECOS DE PAZ</span>
+                                <!--Sala moderna con sofá y decoración minimalista.
+                                <br>Comedor para 4 <br>personas.    
+                                <span class="credit">ECOS DE PAZ</span>  -->
                             </figcaption>
                         </figure>
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                            <img src="/Imagenes/arteaga/carrusel/lavado.jpg" alt="">
+                            <div>
+                                <img src="/Imagenes/arteaga/carrusel/lavado.jpg" alt="">
+                            </div>
                             <figcaption>
-                                Patio de servicio <br>práctico.
-                                <br>Espacio para <br>lavar y tender ropa.
-                                <span class="credit">ECOS DE PAZ</span>
+                                <!-- Patio de servicio <br>práctico.  
+                                <br>Espacio para <br>lavar y tender ropa.  
+                                <span class="credit">ECOS DE PAZ</span>   -->
                             </figcaption>
                         </figure>
                     </li>
                     <li class="carousel__slide">
                         <figure>
-                            <img src="/Imagenes/arteaga/carrusel/baño.jpg" alt="">
+                            <div>
+                                <img src="/Imagenes/arteaga/carrusel/baño.jpg" alt="">
+                            </div>
                             <figcaption>
-                                Baño completo con agua caliente
-                                <span class="credit">ECOS DE PAZ</span>
+                                <!--Baño completo con agua caliente
+                                <span class="credit">ECOS DE PAZ</span>       -->
                             </figcaption>
                         </figure>
                     </li>
@@ -517,19 +331,37 @@
             </div>
         </div>
     </section>
-    <!-- Whatsapp floating button -->
-    <a href="https://api.whatsapp.com/send?phone=529511597471&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20."
-        class="float-whatsapp" target="_blank">
-        <i class="fab fa-whatsapp my-float-whatsapp"></i>
-    </a>
-    <!--messenger-->
-    <a href="https://m.me/tuUsuarioDeMessenger" class="float-messenger" target="_blank">
-        <i class="fab fa-facebook-messenger my-float"></i>
-    </a>
-    <!-- Botón flotante para regresar al inicio -->
-    <a href="index.html" class="float-home" title="Regresar al inicio">
-        <i class="fa fa-home my-float-home"></i>
-    </a>
+    <!--FIN DEL CARRUSEL-->
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="Logo.png" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est mollitia similique facere fuga aliquam
+                    perferendis repellendus, debitis blanditiis atque soluta necessitatibus laboriosam praesentium quas
+                    dignissimos, reprehenderit, quaerat sed quibusdam! Molestias.</p>
+                <p>Siii</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy;2024 <b>EcosdePaz</b> - Todos los derechso reservados.</small>
+        </div>
+    </footer>
+
 
 </body>
 

@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "The Season";
+    src: url("path-to-your-font/TheSeason.ttf") format("truetype");
+  }
+  
+  header {
+    background: linear-gradient(to bottom, #006d649d, #ffffff);
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+  }
+  
+  .icon-container .nav-link {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 30px;
+  }
+  
+  .icon-container .nav-link:hover {
+    color: #006d64;
+  }
+  
+  #AcercaDe,
+  #Idioma {
+    font-family: "The Season", sans-serif;
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  
+  #img-inicio {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Sombra 3D para las tarjetas */
+  .card {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 8px 8px 20px rgba(2, 161, 235, 0.705);
+  }
+  
+  /* Fuente y tamaño para los textos de las cards */
+  .card-text {
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;
+  }
+  
+  /* Media Queries para hacer responsivo */
+  @media (max-width: 768px) {
+    #img-inicio {
+      margin-top: 20px;
+    }
+  
+    .card-text {
+      font-size: 18px;
+      /* Ajustar texto en pantallas pequeñas */
+    }
+  
+    .icon-container {
+      justify-content: center;
+      /* Centrar íconos en pantallas pequeñas */
+      margin-top: 10px;
+    }
+  }
+  
+  /* Whatsapp floating button */
+  .float-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 101;
+  }
+  
+  .float-whatsapp:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color: #fff;
+  }
+  
+  .my-float-whatsapp {
+    margin-top: 16px;
+  }
+  
+  /*messenger*/
+  .float-messenger {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 100px;
+    /* Ajustar según la posición deseada */
+    right: 40px;
+    background-color: #0084FF;
+    /* Color azul de Messenger */
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  
+  .float-messenger:hover {
+    text-decoration: none;
+    color: #0084FF;
+    background-color: #FFF;
+  }
+  
+  .my-float {
+    margin-top: 16px;
+  }
+  
+  /*STYLE DEL FOOTER*/
+  
+  .pie-pagina{
+    width: 100%;
+    background: linear-gradient(#ffffff28,#006d64);
+    margin-top: 50px;
+  }
+  .pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  .pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .pie-pagina .grupo-1 .box figure img{
+    width: 280px;
+  }
+  
+  .pie-pagina .grupo-1 .box h2{
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  
+  .pie-pagina .grupo-1 .box p{
+    color: #252525;
+    margin-bottom: 10px;
+  
+  }
+  
+  .pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: rgb(9, 72, 143);
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  transition: all 300ms ease;
+  }
+  
+  .pie-pagina .grupo-1 .red-social a:hover{
+    color: #2d0068;
+  }
+  
+  .pie-pagina .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  @media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid: gap 30px;
+      padding: 35px 0px;
+  
+    }
+    
+  }
+  
